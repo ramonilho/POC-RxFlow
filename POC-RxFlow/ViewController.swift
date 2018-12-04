@@ -10,11 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    private let color: UIColor
+    
+    required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented")}
+    
+    init(_ color: UIColor, title: String) {
+        self.color = color
+        
+        super.init(nibName: nil, bundle: nil)
+        
+        self.title = title
+    }
+    
+    override func loadView() {
+        super.loadView()
+        view.backgroundColor = self.color
     }
 
-
 }
-

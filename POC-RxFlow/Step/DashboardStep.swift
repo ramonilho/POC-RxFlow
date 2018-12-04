@@ -1,5 +1,5 @@
 //
-//  StartupStep.swift
+//  DashboardStep.swift
 //  POC-RxFlow
 //
 //  Created by Ramon Honorio on 03/12/18.
@@ -8,6 +8,10 @@
 
 import RxFlow
 
-enum StartupStep: Step {
-    case home
+enum DashboardStep: Step {
+    case initial
+    
+    case red
+    case green
+    case blue
 }

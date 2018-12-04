@@ -9,19 +9,33 @@
 /* Begin PBXBuildFile section */
 		F6F9B8E721B5FA8F00D14D3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B8E621B5FA8F00D14D3D /* AppDelegate.swift */; };
 		F6F9B8E921B5FA8F00D14D3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B8E821B5FA8F00D14D3D /* ViewController.swift */; };
-		F6F9B8EC21B5FA8F00D14D3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F9B8EA21B5FA8F00D14D3D /* Main.storyboard */; };
 		F6F9B8EE21B5FA9000D14D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F9B8ED21B5FA9000D14D3D /* Assets.xcassets */; };
 		F6F9B8F121B5FA9000D14D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F9B8EF21B5FA9000D14D3D /* LaunchScreen.storyboard */; };
+		F6F9B91E21B603CD00D14D3D /* ApplicationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B91D21B603CD00D14D3D /* ApplicationFlow.swift */; };
+		F6F9B92021B6055200D14D3D /* StartupStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B91F21B6055200D14D3D /* StartupStep.swift */; };
+		F6F9B92421B6072B00D14D3D /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92321B6072B00D14D3D /* MainFlow.swift */; };
+		F6F9B92621B60F1500D14D3D /* RedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92521B60F1500D14D3D /* RedFlow.swift */; };
+		F6F9B92821B60FBE00D14D3D /* DashboardStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92721B60FBE00D14D3D /* DashboardStep.swift */; };
+		F6F9B92A21B6111200D14D3D /* GreenFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92921B6111200D14D3D /* GreenFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F6F9B8E321B5FA8F00D14D3D /* POC-RxFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POC-RxFlow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F9B8E621B5FA8F00D14D3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F9B8E821B5FA8F00D14D3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F6F9B8EB21B5FA8F00D14D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6F9B8ED21B5FA9000D14D3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6F9B8F021B5FA9000D14D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6F9B8F221B5FA9000D14D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F9B90821B5FE5C00D14D3D /* RxFlow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxFlow.framework; path = Carthage/Build/iOS/RxFlow.framework; sourceTree = "<group>"; };
+		F6F9B90921B5FE5C00D14D3D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		F6F9B90A21B5FE5C00D14D3D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		F6F9B90B21B5FE5C00D14D3D /* Toaster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toaster.framework; path = Carthage/Build/iOS/Toaster.framework; sourceTree = "<group>"; };
+		F6F9B91D21B603CD00D14D3D /* ApplicationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlow.swift; sourceTree = "<group>"; };
+		F6F9B91F21B6055200D14D3D /* StartupStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupStep.swift; sourceTree = "<group>"; };
+		F6F9B92321B6072B00D14D3D /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
+		F6F9B92521B60F1500D14D3D /* RedFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedFlow.swift; sourceTree = "<group>"; };
+		F6F9B92721B60FBE00D14D3D /* DashboardStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardStep.swift; sourceTree = "<group>"; };
+		F6F9B92921B6111200D14D3D /* GreenFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +52,10 @@
 		F6F9B8DA21B5FA8F00D14D3D = {
 			isa = PBXGroup;
 			children = (
+				F6F9B90A21B5FE5C00D14D3D /* RxCocoa.framework */,
+				F6F9B90821B5FE5C00D14D3D /* RxFlow.framework */,
+				F6F9B90921B5FE5C00D14D3D /* RxSwift.framework */,
+				F6F9B90B21B5FE5C00D14D3D /* Toaster.framework */,
 				F6F9B8E521B5FA8F00D14D3D /* POC-RxFlow */,
 				F6F9B8E421B5FA8F00D14D3D /* Products */,
 			);
@@ -54,14 +72,35 @@
 		F6F9B8E521B5FA8F00D14D3D /* POC-RxFlow */ = {
 			isa = PBXGroup;
 			children = (
+				F6F9B8F221B5FA9000D14D3D /* Info.plist */,
 				F6F9B8E621B5FA8F00D14D3D /* AppDelegate.swift */,
 				F6F9B8E821B5FA8F00D14D3D /* ViewController.swift */,
-				F6F9B8EA21B5FA8F00D14D3D /* Main.storyboard */,
 				F6F9B8ED21B5FA9000D14D3D /* Assets.xcassets */,
 				F6F9B8EF21B5FA9000D14D3D /* LaunchScreen.storyboard */,
-				F6F9B8F221B5FA9000D14D3D /* Info.plist */,
+				F6F9B92121B6057700D14D3D /* Flow */,
+				F6F9B92221B6057B00D14D3D /* Step */,
 			);
 			path = "POC-RxFlow";
+			sourceTree = "<group>";
+		};
+		F6F9B92121B6057700D14D3D /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				F6F9B91D21B603CD00D14D3D /* ApplicationFlow.swift */,
+				F6F9B92321B6072B00D14D3D /* MainFlow.swift */,
+				F6F9B92521B60F1500D14D3D /* RedFlow.swift */,
+				F6F9B92921B6111200D14D3D /* GreenFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		F6F9B92221B6057B00D14D3D /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				F6F9B91F21B6055200D14D3D /* StartupStep.swift */,
+				F6F9B92721B60FBE00D14D3D /* DashboardStep.swift */,
+			);
+			path = Step;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +113,7 @@
 				F6F9B8DF21B5FA8F00D14D3D /* Sources */,
 				F6F9B8E021B5FA8F00D14D3D /* Frameworks */,
 				F6F9B8E121B5FA8F00D14D3D /* Resources */,
+				F6F9B91521B5FEB200D14D3D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -124,11 +164,38 @@
 			files = (
 				F6F9B8F121B5FA9000D14D3D /* LaunchScreen.storyboard in Resources */,
 				F6F9B8EE21B5FA9000D14D3D /* Assets.xcassets in Resources */,
-				F6F9B8EC21B5FA8F00D14D3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F6F9B91521B5FEB200D14D3D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxFlow.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Toaster.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxFlow.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Toaster.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6F9B8DF21B5FA8F00D14D3D /* Sources */ = {
@@ -136,21 +203,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F9B8E921B5FA8F00D14D3D /* ViewController.swift in Sources */,
+				F6F9B91E21B603CD00D14D3D /* ApplicationFlow.swift in Sources */,
+				F6F9B92821B60FBE00D14D3D /* DashboardStep.swift in Sources */,
+				F6F9B92A21B6111200D14D3D /* GreenFlow.swift in Sources */,
+				F6F9B92421B6072B00D14D3D /* MainFlow.swift in Sources */,
+				F6F9B92621B60F1500D14D3D /* RedFlow.swift in Sources */,
 				F6F9B8E721B5FA8F00D14D3D /* AppDelegate.swift in Sources */,
+				F6F9B92021B6055200D14D3D /* StartupStep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F6F9B8EA21B5FA8F00D14D3D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6F9B8EB21B5FA8F00D14D3D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F6F9B8EF21B5FA9000D14D3D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,7 +348,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "POC-RxFlow/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +370,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "POC-RxFlow/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

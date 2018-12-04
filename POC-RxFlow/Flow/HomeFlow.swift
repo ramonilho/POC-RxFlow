@@ -7,7 +7,24 @@
 //
 
 import UIKit
+import RxFlow
 
-class HomeFlow: NSObject {
+class MainFlow: Flow {
+    
+    var root: Presentable {
+        return self.rootViewController
+    }
+    
+    func navigate(to step: Step) -> NextFlowItems {
+        return .none
+    }
 
+    private lazy var rootViewController: ViewController = {
+        return ViewController()
+    }()
+    
+    deinit {
+        print("\(type(of: self)): \(#function)")
+    }
+    
 }
