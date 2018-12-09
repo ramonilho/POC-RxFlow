@@ -17,10 +17,10 @@ class DashboardFlow {
     
     // MARK: - Main Flows
     
-    let attendanceFlow = AttendanceHistoryFlow()
+    let redFlow = RedHistoryFlow()
     
-    let contentFlow = ContentFlow()
-    let contentStepper = ContentStepper()
+    let greenFlow = GreenFlow()
+    let greenStepper = GreenStepper()
     
 }
 
@@ -46,25 +46,25 @@ extension DashboardFlow: Flow {
     }
     
     private func navigationToDashboard() -> NextFlowItems {
-        Flows.whenReady(flow1: attendanceFlow, flow2: contentFlow) { [unowned self]
-            (attendanceRoot: UINavigationController, contentRoot: UINavigationController) in
+        Flows.whenReady(flow1: redFlow, flow2: greenFlow) { [unowned self]
+            (redRoot: UINavigationController, greenRoot: UINavigationController) in
             
-            let attendanceTab = UITabBarItem(title: "Attendance", image: nil, selectedImage: nil)
-            attendanceRoot.tabBarItem = attendanceTab
+            let redTab = UITabBarItem(title: "Red", image: nil, selectedImage: nil)
+            redRoot.tabBarItem = redTab
             
-            let contentTab = UITabBarItem(title: "Content", image: nil, selectedImage: nil)
-            contentRoot.tabBarItem = contentTab
+            let greenTab = UITabBarItem(title: "Green", image: nil, selectedImage: nil)
+            greenRoot.tabBarItem = greenTab
             
-            self.rootVC.setViewControllers([attendanceRoot, contentRoot], animated: false)
+            self.rootVC.setViewControllers([redRoot, greenRoot], animated: false)
         }
         
         return .multiple(flowItems: [
             
-            NextFlowItem(nextPresentable: attendanceFlow,
-                         nextStepper: attendanceFlow.mainStepper),
+            NextFlowItem(nextPresentable: redFlow,
+                         nextStepper: redFlow.mainStepper),
             
-            NextFlowItem(nextPresentable: contentFlow,
-                         nextStepper: contentStepper),
+            NextFlowItem(nextPresentable: greenFlow,
+                         nextStepper: greenStepper),
             
             ]
         )

@@ -14,8 +14,6 @@ class ViewController: UIViewController {
 
     private let color: UIColor
     
-    required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented")}
-    
     init(_ color: UIColor, title: String) {
         self.color = color
         
@@ -23,6 +21,8 @@ class ViewController: UIViewController {
         
         self.title = title
     }
+    
+    required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
     override func loadView() {
         super.loadView()

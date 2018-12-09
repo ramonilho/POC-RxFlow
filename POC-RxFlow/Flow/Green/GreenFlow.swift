@@ -1,5 +1,5 @@
 //
-//  ContentFlow.swift
+//  GreenFlow.swift
 //  POC-RxFlow
 //
 //  Created by Ramon Honorio on 03/12/18.
@@ -9,14 +9,14 @@
 import UIKit
 import RxFlow
 
-class ContentFlow: Flow {
+class GreenFlow: Flow {
     
     var root: Presentable { return self.rootVC }
     
     private let rootVC = UINavigationController()
     
     func navigate(to step: Step) -> NextFlowItems {
-        guard let step = step as? ContentStep else { return .none }
+        guard let step = step as? GreenStep else { return .none }
         
         switch step {
         case .history:
@@ -32,12 +32,12 @@ class ContentFlow: Flow {
     
 }
 
-class ContentStepper: Stepper {
+class GreenStepper: Stepper {
     init() {
-        self.step.accept(ContentStep.history)
+        self.step.accept(GreenStep.history)
     }
 }
 
-enum ContentStep: Step {
+enum GreenStep: Step {
     case history
 }

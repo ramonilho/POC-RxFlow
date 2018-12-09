@@ -14,13 +14,16 @@
 		F6F9B91E21B603CD00D14D3D /* ApplicationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B91D21B603CD00D14D3D /* ApplicationFlow.swift */; };
 		F6F9B92021B6055200D14D3D /* ApplicationStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B91F21B6055200D14D3D /* ApplicationStep.swift */; };
 		F6F9B92421B6072B00D14D3D /* DashboardFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92321B6072B00D14D3D /* DashboardFlow.swift */; };
-		F6F9B92621B60F1500D14D3D /* AttendanceHistoryFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92521B60F1500D14D3D /* AttendanceHistoryFlow.swift */; };
-		F6F9B92A21B6111200D14D3D /* ContentFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92921B6111200D14D3D /* ContentFlow.swift */; };
-		F6F9B92F21BD44C600D14D3D /* AttendanceCreateFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92E21BD44C600D14D3D /* AttendanceCreateFlow.swift */; };
-		F6F9B93321BD465600D14D3D /* AttendanceSelectDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93221BD465600D14D3D /* AttendanceSelectDateVC.swift */; };
-		F6F9B93621BD469200D14D3D /* AttendanceSelectDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93521BD469200D14D3D /* AttendanceSelectDateViewModel.swift */; };
-		F6F9B93821BD48FB00D14D3D /* AttendanceHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93721BD48FB00D14D3D /* AttendanceHistoryVC.swift */; };
-		F6F9B93A21BD49C100D14D3D /* AttendanceHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93921BD49C100D14D3D /* AttendanceHistoryViewModel.swift */; };
+		F6F9B92621B60F1500D14D3D /* RedHistoryFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92521B60F1500D14D3D /* RedHistoryFlow.swift */; };
+		F6F9B92A21B6111200D14D3D /* GreenFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92921B6111200D14D3D /* GreenFlow.swift */; };
+		F6F9B92F21BD44C600D14D3D /* RedCreateFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92E21BD44C600D14D3D /* RedCreateFlow.swift */; };
+		F6F9B93321BD465600D14D3D /* RedSelectDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93221BD465600D14D3D /* RedSelectDateVC.swift */; };
+		F6F9B93621BD469200D14D3D /* RedSelectDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93521BD469200D14D3D /* RedSelectDateViewModel.swift */; };
+		F6F9B93821BD48FB00D14D3D /* RedHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93721BD48FB00D14D3D /* RedHistoryVC.swift */; };
+		F6F9B93A21BD49C100D14D3D /* RedHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93921BD49C100D14D3D /* RedHistoryViewModel.swift */; };
+		F6F9B93D21BD656C00D14D3D /* RedRandomNumbersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93C21BD656C00D14D3D /* RedRandomNumbersVC.swift */; };
+		F6F9B93F21BD659B00D14D3D /* RedRandomNumbersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93E21BD659B00D14D3D /* RedRandomNumbersViewModel.swift */; };
+		F6F9B94321BD678E00D14D3D /* RedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B94221BD678E00D14D3D /* RedModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +36,16 @@
 		F6F9B91D21B603CD00D14D3D /* ApplicationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlow.swift; sourceTree = "<group>"; };
 		F6F9B91F21B6055200D14D3D /* ApplicationStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationStep.swift; sourceTree = "<group>"; };
 		F6F9B92321B6072B00D14D3D /* DashboardFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFlow.swift; sourceTree = "<group>"; };
-		F6F9B92521B60F1500D14D3D /* AttendanceHistoryFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceHistoryFlow.swift; sourceTree = "<group>"; };
-		F6F9B92921B6111200D14D3D /* ContentFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentFlow.swift; sourceTree = "<group>"; };
-		F6F9B92E21BD44C600D14D3D /* AttendanceCreateFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceCreateFlow.swift; sourceTree = "<group>"; };
-		F6F9B93221BD465600D14D3D /* AttendanceSelectDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceSelectDateVC.swift; sourceTree = "<group>"; };
-		F6F9B93521BD469200D14D3D /* AttendanceSelectDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceSelectDateViewModel.swift; sourceTree = "<group>"; };
-		F6F9B93721BD48FB00D14D3D /* AttendanceHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceHistoryVC.swift; sourceTree = "<group>"; };
-		F6F9B93921BD49C100D14D3D /* AttendanceHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceHistoryViewModel.swift; sourceTree = "<group>"; };
+		F6F9B92521B60F1500D14D3D /* RedHistoryFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedHistoryFlow.swift; sourceTree = "<group>"; };
+		F6F9B92921B6111200D14D3D /* GreenFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenFlow.swift; sourceTree = "<group>"; };
+		F6F9B92E21BD44C600D14D3D /* RedCreateFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCreateFlow.swift; sourceTree = "<group>"; };
+		F6F9B93221BD465600D14D3D /* RedSelectDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSelectDateVC.swift; sourceTree = "<group>"; };
+		F6F9B93521BD469200D14D3D /* RedSelectDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSelectDateViewModel.swift; sourceTree = "<group>"; };
+		F6F9B93721BD48FB00D14D3D /* RedHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedHistoryVC.swift; sourceTree = "<group>"; };
+		F6F9B93921BD49C100D14D3D /* RedHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedHistoryViewModel.swift; sourceTree = "<group>"; };
+		F6F9B93C21BD656C00D14D3D /* RedRandomNumbersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedRandomNumbersVC.swift; sourceTree = "<group>"; };
+		F6F9B93E21BD659B00D14D3D /* RedRandomNumbersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedRandomNumbersViewModel.swift; sourceTree = "<group>"; };
+		F6F9B94221BD678E00D14D3D /* RedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +94,8 @@
 			children = (
 				F6F9B91D21B603CD00D14D3D /* ApplicationFlow.swift */,
 				F6F9B92321B6072B00D14D3D /* DashboardFlow.swift */,
-				F6F9B93021BD460200D14D3D /* Attendance */,
-				F6F9B93121BD460A00D14D3D /* Content */,
+				F6F9B93021BD460200D14D3D /* Red */,
+				F6F9B93121BD460A00D14D3D /* Green */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -102,29 +108,30 @@
 			path = Step;
 			sourceTree = "<group>";
 		};
-		F6F9B93021BD460200D14D3D /* Attendance */ = {
+		F6F9B93021BD460200D14D3D /* Red */ = {
 			isa = PBXGroup;
 			children = (
 				F6F9B93B21BD49C800D14D3D /* History */,
 				F6F9B93421BD465A00D14D3D /* Create */,
 			);
-			path = Attendance;
+			path = Red;
 			sourceTree = "<group>";
 		};
-		F6F9B93121BD460A00D14D3D /* Content */ = {
+		F6F9B93121BD460A00D14D3D /* Green */ = {
 			isa = PBXGroup;
 			children = (
-				F6F9B92921B6111200D14D3D /* ContentFlow.swift */,
+				F6F9B92921B6111200D14D3D /* GreenFlow.swift */,
 			);
-			path = Content;
+			path = Green;
 			sourceTree = "<group>";
 		};
 		F6F9B93421BD465A00D14D3D /* Create */ = {
 			isa = PBXGroup;
 			children = (
-				F6F9B92E21BD44C600D14D3D /* AttendanceCreateFlow.swift */,
-				F6F9B93521BD469200D14D3D /* AttendanceSelectDateViewModel.swift */,
-				F6F9B93221BD465600D14D3D /* AttendanceSelectDateVC.swift */,
+				F6F9B92E21BD44C600D14D3D /* RedCreateFlow.swift */,
+				F6F9B94221BD678E00D14D3D /* RedModel.swift */,
+				F6F9B94021BD65A300D14D3D /* SelectDate */,
+				F6F9B94121BD65AA00D14D3D /* RandomNumbers */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -132,11 +139,29 @@
 		F6F9B93B21BD49C800D14D3D /* History */ = {
 			isa = PBXGroup;
 			children = (
-				F6F9B92521B60F1500D14D3D /* AttendanceHistoryFlow.swift */,
-				F6F9B93921BD49C100D14D3D /* AttendanceHistoryViewModel.swift */,
-				F6F9B93721BD48FB00D14D3D /* AttendanceHistoryVC.swift */,
+				F6F9B92521B60F1500D14D3D /* RedHistoryFlow.swift */,
+				F6F9B93921BD49C100D14D3D /* RedHistoryViewModel.swift */,
+				F6F9B93721BD48FB00D14D3D /* RedHistoryVC.swift */,
 			);
 			path = History;
+			sourceTree = "<group>";
+		};
+		F6F9B94021BD65A300D14D3D /* SelectDate */ = {
+			isa = PBXGroup;
+			children = (
+				F6F9B93521BD469200D14D3D /* RedSelectDateViewModel.swift */,
+				F6F9B93221BD465600D14D3D /* RedSelectDateVC.swift */,
+			);
+			path = SelectDate;
+			sourceTree = "<group>";
+		};
+		F6F9B94121BD65AA00D14D3D /* RandomNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				F6F9B93C21BD656C00D14D3D /* RedRandomNumbersVC.swift */,
+				F6F9B93E21BD659B00D14D3D /* RedRandomNumbersViewModel.swift */,
+			);
+			path = RandomNumbers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,16 +267,19 @@
 			files = (
 				F6F9B8E921B5FA8F00D14D3D /* ViewController.swift in Sources */,
 				F6F9B91E21B603CD00D14D3D /* ApplicationFlow.swift in Sources */,
-				F6F9B93821BD48FB00D14D3D /* AttendanceHistoryVC.swift in Sources */,
-				F6F9B92F21BD44C600D14D3D /* AttendanceCreateFlow.swift in Sources */,
-				F6F9B93A21BD49C100D14D3D /* AttendanceHistoryViewModel.swift in Sources */,
-				F6F9B92A21B6111200D14D3D /* ContentFlow.swift in Sources */,
+				F6F9B93821BD48FB00D14D3D /* RedHistoryVC.swift in Sources */,
+				F6F9B92F21BD44C600D14D3D /* RedCreateFlow.swift in Sources */,
+				F6F9B93A21BD49C100D14D3D /* RedHistoryViewModel.swift in Sources */,
+				F6F9B92A21B6111200D14D3D /* GreenFlow.swift in Sources */,
+				F6F9B93F21BD659B00D14D3D /* RedRandomNumbersViewModel.swift in Sources */,
 				F6F9B92421B6072B00D14D3D /* DashboardFlow.swift in Sources */,
-				F6F9B92621B60F1500D14D3D /* AttendanceHistoryFlow.swift in Sources */,
-				F6F9B93321BD465600D14D3D /* AttendanceSelectDateVC.swift in Sources */,
+				F6F9B92621B60F1500D14D3D /* RedHistoryFlow.swift in Sources */,
+				F6F9B93321BD465600D14D3D /* RedSelectDateVC.swift in Sources */,
+				F6F9B94321BD678E00D14D3D /* RedModel.swift in Sources */,
 				F6F9B8E721B5FA8F00D14D3D /* AppDelegate.swift in Sources */,
 				F6F9B92021B6055200D14D3D /* ApplicationStep.swift in Sources */,
-				F6F9B93621BD469200D14D3D /* AttendanceSelectDateViewModel.swift in Sources */,
+				F6F9B93D21BD656C00D14D3D /* RedRandomNumbersVC.swift in Sources */,
+				F6F9B93621BD469200D14D3D /* RedSelectDateViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

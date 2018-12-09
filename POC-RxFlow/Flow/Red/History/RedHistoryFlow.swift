@@ -10,14 +10,14 @@ import UIKit
 import RxFlow
 
 
-class AttendanceHistoryFlow {
+class RedHistoryFlow {
     
     let rootNavigation = UINavigationController()
-    let rootVC = AttendanceHistoryVC()
+    let rootVC = RedHistoryVC()
     
 }
 
-extension AttendanceHistoryFlow: Flow {
+extension RedHistoryFlow: Flow {
     
     var root: Presentable {
         return self.rootNavigation
@@ -29,24 +29,30 @@ extension AttendanceHistoryFlow: Flow {
     
     func navigate(to step: Step) -> NextFlowItems {
         switch step {
-        case AttendanceStep.history:
-            return navigationToRed()
-        case AttendanceStep.startCreateAttendance:
-            return navigationToPurple()
-        case AttendanceStep.cancelCreateAttendance:
-            return navigationToCancelToast()
+        case RedStep.history:
+            return navigationHistory()
+            
+        case RedStep.Create.started:
+            return navigationCreateRed()
+            
+        case RedStep.Create.finished(let model):
+            return navigationFinishedCreateRed(model: model)
+            
+        case RedStep.Create.canceled:
+            return navigationCancelCreateRed()
+            
         default:
             return .none
         }
     }
     
-    func navigationToRed() -> NextFlowItems {
+    func navigationHistory() -> NextFlowItems {
         rootNavigation.pushViewController(rootVC, animated: true)
         return .none
     }
     
-    func navigationToPurple() -> NextFlowItems {
-        let createFlow = AttendanceCreateFlow()
+    func navigationCreateRed() -> NextFlowItems {
+        let createFlow = RedCreateFlow()
         
         rootNavigation.present(createFlow.rootNavigation, animated: true)
         
@@ -54,8 +60,13 @@ extension AttendanceHistoryFlow: Flow {
                                            nextStepper: createFlow.mainStepper))
     }
     
-    func navigationToCancelToast() -> NextFlowItems {
-        rootVC.presentCancelAttendanceCreationToast()
+    func navigationCancelCreateRed() -> NextFlowItems {
+        rootVC.presentCancelRedCreationToast()
+        return .none
+    }
+    
+    func navigationFinishedCreateRed(model: RedModel) -> NextFlowItems {
+        rootVC.presentCreateRedToast(model: model)
         return .none
     }
     
@@ -65,8 +76,6 @@ extension AttendanceHistoryFlow: Flow {
 
 }
 
-enum AttendanceStep: Step {
+enum RedStep: Step {
     case history
-    case startCreateAttendance
-    case cancelCreateAttendance
 }
