@@ -3,3 +3,5 @@ github "ReactiveX/RxSwift" ~> 4.3
 github "RxSwiftCommunity/RxFlow"
 
 github "devxoul/Toaster"
+
+github "SnapKit/SnapKit" ~> 4.0

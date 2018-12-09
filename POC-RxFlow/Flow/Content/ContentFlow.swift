@@ -1,5 +1,5 @@
 //
-//  RedFlow.swift
+//  ContentFlow.swift
 //  POC-RxFlow
 //
 //  Created by Ramon Honorio on 03/12/18.
@@ -9,35 +9,35 @@
 import UIKit
 import RxFlow
 
-class RedFlow: Flow {
+class ContentFlow: Flow {
     
     var root: Presentable { return self.rootVC }
     
     private let rootVC = UINavigationController()
     
     func navigate(to step: Step) -> NextFlowItems {
-        guard let step = step as? RedStep else { return .none }
+        guard let step = step as? ContentStep else { return .none }
         
         switch step {
         case .history:
-            return navigationToRed()
+            return navigationToGreen()
         }
     }
     
-    func navigationToRed() -> NextFlowItems {
-        let vc = ViewController(.red, title: "Red")
+    func navigationToGreen() -> NextFlowItems {
+        let vc = ViewController(.green, title: "Green")
         rootVC.pushViewController(vc, animated: true)
         return .none
     }
-
+    
 }
 
-class RedStepper: Stepper {
+class ContentStepper: Stepper {
     init() {
-        self.step.accept(RedStep.history)
+        self.step.accept(ContentStep.history)
     }
 }
 
-enum RedStep: Step {
+enum ContentStep: Step {
     case history
 }

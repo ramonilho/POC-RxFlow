@@ -20,32 +20,40 @@ class ApplicationFlow: Flow {
         return self.rootWindow
     }
     
+    lazy var mainStepper: ApplicationStepper = {
+        return ApplicationStepper()
+    }()
+    
     func navigate(to step: Step) -> NextFlowItems {
-        guard let step = step as? StartupStep else { return NextFlowItems.none }
+        guard let step = step as? ApplicationStep else { return NextFlowItems.none }
         
         switch step {
-        case .home:
+        case .dashboard:
             return navigationToDashboard()
-        default:
-            return NextFlowItems.none
         }
     }
     
     private func navigationToDashboard() -> NextFlowItems {
-        let homeFlow = MainFlow()
+        let dashboardFlow = DashboardFlow()
         
-        Flows.whenReady(flow1: homeFlow) { [unowned self] (root) in
+        Flows.whenReady(flow1: dashboardFlow) { [unowned self] (root) in
             self.rootWindow.rootViewController = root
         }
         
-        return .one(flowItem: NextFlowItem(nextPresentable: homeFlow,
-                                           nextStepper: OneStepper(withSingleStep: DashboardStep.initial)))
+        return .one(flowItem: NextFlowItem(nextPresentable: dashboardFlow,
+                                           nextStepper: dashboardFlow.mainStepper))
     }
     
 }
 
 class ApplicationStepper: Stepper {
+    
     init() {
-        self.step.accept(StartupStep.home)
+        goToDashboard()
     }
+    
+    func goToDashboard() {
+        step.accept(ApplicationStep.dashboard)
+    }
+    
 }

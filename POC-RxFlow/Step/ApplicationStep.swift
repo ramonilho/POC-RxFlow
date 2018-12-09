@@ -8,6 +8,6 @@
 
 import RxFlow
 
-enum StartupStep: Step {
-    case home
+enum ApplicationStep: Step {
+    case dashboard
 }

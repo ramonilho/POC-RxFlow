@@ -25,7 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         logFlowNavigation()
         
-        coordinator.coordinate(flow: applicationFlow, withStepper: ApplicationStepper())
+        coordinator.coordinate(flow: applicationFlow,
+                               withStepper: applicationFlow.mainStepper)
         
         return true
     }

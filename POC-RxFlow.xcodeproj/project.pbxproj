@@ -12,11 +12,15 @@
 		F6F9B8EE21B5FA9000D14D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F9B8ED21B5FA9000D14D3D /* Assets.xcassets */; };
 		F6F9B8F121B5FA9000D14D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F9B8EF21B5FA9000D14D3D /* LaunchScreen.storyboard */; };
 		F6F9B91E21B603CD00D14D3D /* ApplicationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B91D21B603CD00D14D3D /* ApplicationFlow.swift */; };
-		F6F9B92021B6055200D14D3D /* StartupStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B91F21B6055200D14D3D /* StartupStep.swift */; };
-		F6F9B92421B6072B00D14D3D /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92321B6072B00D14D3D /* MainFlow.swift */; };
-		F6F9B92621B60F1500D14D3D /* RedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92521B60F1500D14D3D /* RedFlow.swift */; };
-		F6F9B92821B60FBE00D14D3D /* DashboardStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92721B60FBE00D14D3D /* DashboardStep.swift */; };
-		F6F9B92A21B6111200D14D3D /* GreenFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92921B6111200D14D3D /* GreenFlow.swift */; };
+		F6F9B92021B6055200D14D3D /* ApplicationStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B91F21B6055200D14D3D /* ApplicationStep.swift */; };
+		F6F9B92421B6072B00D14D3D /* DashboardFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92321B6072B00D14D3D /* DashboardFlow.swift */; };
+		F6F9B92621B60F1500D14D3D /* AttendanceHistoryFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92521B60F1500D14D3D /* AttendanceHistoryFlow.swift */; };
+		F6F9B92A21B6111200D14D3D /* ContentFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92921B6111200D14D3D /* ContentFlow.swift */; };
+		F6F9B92F21BD44C600D14D3D /* AttendanceCreateFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B92E21BD44C600D14D3D /* AttendanceCreateFlow.swift */; };
+		F6F9B93321BD465600D14D3D /* AttendanceSelectDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93221BD465600D14D3D /* AttendanceSelectDateVC.swift */; };
+		F6F9B93621BD469200D14D3D /* AttendanceSelectDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93521BD469200D14D3D /* AttendanceSelectDateViewModel.swift */; };
+		F6F9B93821BD48FB00D14D3D /* AttendanceHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93721BD48FB00D14D3D /* AttendanceHistoryVC.swift */; };
+		F6F9B93A21BD49C100D14D3D /* AttendanceHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9B93921BD49C100D14D3D /* AttendanceHistoryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,16 +30,16 @@
 		F6F9B8ED21B5FA9000D14D3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6F9B8F021B5FA9000D14D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6F9B8F221B5FA9000D14D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6F9B90821B5FE5C00D14D3D /* RxFlow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxFlow.framework; path = Carthage/Build/iOS/RxFlow.framework; sourceTree = "<group>"; };
-		F6F9B90921B5FE5C00D14D3D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		F6F9B90A21B5FE5C00D14D3D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		F6F9B90B21B5FE5C00D14D3D /* Toaster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toaster.framework; path = Carthage/Build/iOS/Toaster.framework; sourceTree = "<group>"; };
 		F6F9B91D21B603CD00D14D3D /* ApplicationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlow.swift; sourceTree = "<group>"; };
-		F6F9B91F21B6055200D14D3D /* StartupStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupStep.swift; sourceTree = "<group>"; };
-		F6F9B92321B6072B00D14D3D /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
-		F6F9B92521B60F1500D14D3D /* RedFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedFlow.swift; sourceTree = "<group>"; };
-		F6F9B92721B60FBE00D14D3D /* DashboardStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardStep.swift; sourceTree = "<group>"; };
-		F6F9B92921B6111200D14D3D /* GreenFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenFlow.swift; sourceTree = "<group>"; };
+		F6F9B91F21B6055200D14D3D /* ApplicationStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationStep.swift; sourceTree = "<group>"; };
+		F6F9B92321B6072B00D14D3D /* DashboardFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFlow.swift; sourceTree = "<group>"; };
+		F6F9B92521B60F1500D14D3D /* AttendanceHistoryFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceHistoryFlow.swift; sourceTree = "<group>"; };
+		F6F9B92921B6111200D14D3D /* ContentFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentFlow.swift; sourceTree = "<group>"; };
+		F6F9B92E21BD44C600D14D3D /* AttendanceCreateFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceCreateFlow.swift; sourceTree = "<group>"; };
+		F6F9B93221BD465600D14D3D /* AttendanceSelectDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceSelectDateVC.swift; sourceTree = "<group>"; };
+		F6F9B93521BD469200D14D3D /* AttendanceSelectDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceSelectDateViewModel.swift; sourceTree = "<group>"; };
+		F6F9B93721BD48FB00D14D3D /* AttendanceHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceHistoryVC.swift; sourceTree = "<group>"; };
+		F6F9B93921BD49C100D14D3D /* AttendanceHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceHistoryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +56,6 @@
 		F6F9B8DA21B5FA8F00D14D3D = {
 			isa = PBXGroup;
 			children = (
-				F6F9B90A21B5FE5C00D14D3D /* RxCocoa.framework */,
-				F6F9B90821B5FE5C00D14D3D /* RxFlow.framework */,
-				F6F9B90921B5FE5C00D14D3D /* RxSwift.framework */,
-				F6F9B90B21B5FE5C00D14D3D /* Toaster.framework */,
 				F6F9B8E521B5FA8F00D14D3D /* POC-RxFlow */,
 				F6F9B8E421B5FA8F00D14D3D /* Products */,
 			);
@@ -87,9 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				F6F9B91D21B603CD00D14D3D /* ApplicationFlow.swift */,
-				F6F9B92321B6072B00D14D3D /* MainFlow.swift */,
-				F6F9B92521B60F1500D14D3D /* RedFlow.swift */,
-				F6F9B92921B6111200D14D3D /* GreenFlow.swift */,
+				F6F9B92321B6072B00D14D3D /* DashboardFlow.swift */,
+				F6F9B93021BD460200D14D3D /* Attendance */,
+				F6F9B93121BD460A00D14D3D /* Content */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -97,10 +97,46 @@
 		F6F9B92221B6057B00D14D3D /* Step */ = {
 			isa = PBXGroup;
 			children = (
-				F6F9B91F21B6055200D14D3D /* StartupStep.swift */,
-				F6F9B92721B60FBE00D14D3D /* DashboardStep.swift */,
+				F6F9B91F21B6055200D14D3D /* ApplicationStep.swift */,
 			);
 			path = Step;
+			sourceTree = "<group>";
+		};
+		F6F9B93021BD460200D14D3D /* Attendance */ = {
+			isa = PBXGroup;
+			children = (
+				F6F9B93B21BD49C800D14D3D /* History */,
+				F6F9B93421BD465A00D14D3D /* Create */,
+			);
+			path = Attendance;
+			sourceTree = "<group>";
+		};
+		F6F9B93121BD460A00D14D3D /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				F6F9B92921B6111200D14D3D /* ContentFlow.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		F6F9B93421BD465A00D14D3D /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				F6F9B92E21BD44C600D14D3D /* AttendanceCreateFlow.swift */,
+				F6F9B93521BD469200D14D3D /* AttendanceSelectDateViewModel.swift */,
+				F6F9B93221BD465600D14D3D /* AttendanceSelectDateVC.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		F6F9B93B21BD49C800D14D3D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				F6F9B92521B60F1500D14D3D /* AttendanceHistoryFlow.swift */,
+				F6F9B93921BD49C100D14D3D /* AttendanceHistoryViewModel.swift */,
+				F6F9B93721BD48FB00D14D3D /* AttendanceHistoryVC.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +218,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxFlow.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Toaster.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -190,6 +227,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxFlow.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Toaster.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -204,12 +242,16 @@
 			files = (
 				F6F9B8E921B5FA8F00D14D3D /* ViewController.swift in Sources */,
 				F6F9B91E21B603CD00D14D3D /* ApplicationFlow.swift in Sources */,
-				F6F9B92821B60FBE00D14D3D /* DashboardStep.swift in Sources */,
-				F6F9B92A21B6111200D14D3D /* GreenFlow.swift in Sources */,
-				F6F9B92421B6072B00D14D3D /* MainFlow.swift in Sources */,
-				F6F9B92621B60F1500D14D3D /* RedFlow.swift in Sources */,
+				F6F9B93821BD48FB00D14D3D /* AttendanceHistoryVC.swift in Sources */,
+				F6F9B92F21BD44C600D14D3D /* AttendanceCreateFlow.swift in Sources */,
+				F6F9B93A21BD49C100D14D3D /* AttendanceHistoryViewModel.swift in Sources */,
+				F6F9B92A21B6111200D14D3D /* ContentFlow.swift in Sources */,
+				F6F9B92421B6072B00D14D3D /* DashboardFlow.swift in Sources */,
+				F6F9B92621B60F1500D14D3D /* AttendanceHistoryFlow.swift in Sources */,
+				F6F9B93321BD465600D14D3D /* AttendanceSelectDateVC.swift in Sources */,
 				F6F9B8E721B5FA8F00D14D3D /* AppDelegate.swift in Sources */,
-				F6F9B92021B6055200D14D3D /* StartupStep.swift in Sources */,
+				F6F9B92021B6055200D14D3D /* ApplicationStep.swift in Sources */,
+				F6F9B93621BD469200D14D3D /* AttendanceSelectDateViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
